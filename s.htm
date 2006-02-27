@@ -8,7 +8,7 @@ function hechaocheng_search(name)
     // 如果链接没有参数，或者链接中不存在我们要获取的参数，直接返回空
     if(location.href.indexOf("?")==-1 || location.href.indexOf(name+'=')==-1)
     {
-        return '<font color="#FF0000">請搜索</font>';
+		self.location="http://"+location.hostname+"?errot=404";
     }
  
     // 获取链接中参数部分
