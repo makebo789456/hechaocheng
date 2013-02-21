@@ -9,62 +9,6 @@
 <meta name="keywords" content="i,Mr.Think,前端开发,WEB前端,前端技术,前端开发,WEB前端开发,用户体验,网站策划,网站优化,青鸟,javascript,jQuery,css,xhtml,html,UE,SEO,Mr.Think的博客,青鸟的博客,PHP爱好者" />
 <meta name="description" content="Mr.Think的博客,中文网名青鸟,现专注于WEB前端开发,同时也是一位PHP的爱好者.爱思考,有点代码洁癖,生吃过螃蟹腿,喜好肉食.这里是我记录知识与生活琐事的地方." />
 <link rel="alternate" type="application/rss+xml" title="阿城守候" href="http://hechaocheng.cn/feed/" />
-<script> 
-/**
- * @author Mr.Think
- * @author blog http://mrthink.net/
- * @2011.02.15
- * 可自由转载及使用,但请注明版权归属
- */
-window.onload=function(){
-	function nowTime(ev,type){
-		/*
-		 * ev:显示时间的元素
-		 * type:时间显示模式.若传入12则为12小时制,不传入则为24小时制
-		 */
-		//年月日时分秒
-		var Y,M,D,W,H,I,S;
-		//月日时分秒为单位时前面补零
-		function fillZero(v){
-			if(v<10){v='0'+v;}
-			return v;
-		}
-		(function(){
-			var d=new Date();
-			var Week=['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
-			Y=d.getFullYear();
-			M=fillZero(d.getMonth()+1);
-			D=fillZero(d.getDate());
-			W=Week[d.getDay()];
-			H=fillZero(d.getHours());
-			I=fillZero(d.getMinutes());
-			S=fillZero(d.getSeconds());
-			//12小时制显示模式
-			if(type && type==12){
-				//若要显示更多时间类型诸如中午凌晨可在下面添加判断
-				if(H<=12){
-					H='上午&nbsp;'+H;
-				}else if(H>12 && H<24){
-					H-=12;
-					H='下午&nbsp;'+fillZero(H);
-				}else if(H==24){
-					H='下午&nbsp;00';
-				}
-			}
-			ev.innerHTML=Y+'年'+M+'月'+D+'日 '+' '+W+'&nbsp;'+H+':'+I+':'+S;
-			//每秒更新时间
-			setTimeout(arguments.callee,1000);
-		})();
-	}
-	
-	//24小时制调用
-	nowTime(document.getElementById('time24'));
-	//12小时制调用
-	nowTime(document.getElementById('time12'),12);
- 
-}
-</script>
-
 <script type="text/javascript"
 src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100291539" data-redirecturi="http://detail.hechaocheng.cn/welcome.html" charset="utf-8"></script>
 <script type="text/javascript">
@@ -104,8 +48,8 @@ alert('注销成功');
 </head>
 
 <body>
-<table width="912" border="0" align="center"><tr><td><div class="acity_waiting_css"><div style="background:#F6F6F6;color:#999999;font-size:12px;"><table style="background:#F6F6F6" width="100%"><tr><td width="40%" class="acw_a"><a href="http://forum.hechaocheng.cn/?search" target="_blank">社区</a>&nbsp;&nbsp;<a href="http://t.hechaocheng.cn/?search" target="_blank">微博</a>&nbsp;&nbsp;<a href="http://blog.hechaocheng.cn/?search" target="_blank">博客</a>&nbsp;&nbsp;<a href="http://www.hechaocheng.cn/search.php" target="_self"><b>搜索</b></a>&nbsp;&nbsp;<a href="http://mail.hechaocheng.cn/?search" target="_blank">邮件</a>&nbsp;&nbsp;<a href="http://reso.hechaocheng.cn/?search" target="_blank">资源</a>&nbsp;&nbsp;<a href="http://so.hechaocheng.cn/?search" target="_blank">纵横</a>&nbsp;&nbsp;<a href="http://share.hechaocheng.cn/?search" target="_blank">分享</a>&nbsp;&nbsp;<a href="https://s3.amazonaws.com/com.alexa.toolbar/atbp/RM1o0O/download/index.htm?www.hechaocheng.cn" target="_blank"><font color="#FF0000">浏览器插件</font></a></td><td width="60%" align="right" style="font-size: 12px;font-weight: bold;"><span id="time24"></span><form action="http://detail.hechaocheng.cn/s.htm" method="get" title="Search..." target="_blank"><input name="q" type="text" value="嘿！運氣不錯哦..." onblur="if (this.value == '') {this.value = '嘿！運氣不錯哦...';}" onfocus="if (this.value == '嘿！運氣不錯哦...') {this.value = '';}" size="20" hechaocheng="1" class="input" />&nbsp;&nbsp;<a href="http://connect.qq.com/widget/wpa/chat.html?tuin=14872638&amp;sigT=dabfd7daaa71e629e43c1fc38dbd4d1e6fff9e82521fa38e999688ca575b577f24c935538eccbfb63bdfdabe62fda7c1" target="_blank"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_1.png" border="0" title="QQ在綫"></a>
-</form></td></tr></table></div>
+<table width="912" border="0" align="center"><tr><td><div class="acity_waiting_css"><div style="background:#F6F6F6;color:#999999;font-size:12px;"><table style="background:#F6F6F6" width="100%"><tr><td width="56%" class="acw_a"><a href="http://forum.hechaocheng.cn/?search" target="_blank">社区</a>&nbsp;&nbsp;<a href="http://t.hechaocheng.cn/?search" target="_blank">微博</a>&nbsp;&nbsp;<a href="http://blog.hechaocheng.cn/?search" target="_blank">博客</a>&nbsp;&nbsp;<a href="http://www.hechaocheng.cn/search.php" target="_self"><b>搜索</b></a>&nbsp;&nbsp;<a href="http://mail.hechaocheng.cn/?search" target="_blank">邮件</a>&nbsp;&nbsp;<a href="http://reso.hechaocheng.cn/?search" target="_blank">资源</a>&nbsp;&nbsp;<a href="http://so.hechaocheng.cn/?search" target="_blank">纵横</a>&nbsp;&nbsp;<a href="http://share.hechaocheng.cn/?search" target="_blank">分享</a>&nbsp;&nbsp;<a href="https://s3.amazonaws.com/com.alexa.toolbar/atbp/RM1o0O/download/index.htm?www.hechaocheng.cn" target="_blank"><font color="#FF0000">浏览器插件</font></a>&nbsp;&nbsp;<a href="http://connect.qq.com/widget/wpa/chat.html?tuin=14872638&amp;sigT=dabfd7daaa71e629e43c1fc38dbd4d1e6fff9e82521fa38e999688ca575b577f24c935538eccbfb63bdfdabe62fda7c1" target="_blank"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_1.png" border="0" title="QQ在綫"></a></td>
+<td width="44%" align="right" style="font-size: 12px;font-weight: bold;"><form action="http://detail.hechaocheng.cn/s.htm" method="get" title="Search..." target="_blank"><input name="q" type="text" value="嘿！運氣不錯哦..." onblur="if (this.value == '') {this.value = '嘿！運氣不錯哦...';}" onfocus="if (this.value == '嘿！運氣不錯哦...') {this.value = '';}" size="20" hechaocheng="1" class="input" /></form></td></tr></table></div>
 
 <table width="100%" border="0">
   <tr>
