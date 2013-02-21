@@ -109,3 +109,6 @@ body,td,th {font-family: Î¢ÈíÑÅºÚ;}
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+table{border-collapse:collapse;}
+th{padding: 2px; font-weight:bold;background:#dedede;color:#626262;border:1px solid #cccccc; text-align:left;}
+.td{padding: 3px 6px; border:1px solid #CCCCCC;}
