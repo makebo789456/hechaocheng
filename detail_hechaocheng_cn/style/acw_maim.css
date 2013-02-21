@@ -60,11 +60,8 @@ th{padding: 2px; font-weight:bold;background:#dedede;color:#626262;border:1px so
 .td{padding: 3px 6px; border:1px solid #CCCCCC;}
 .acw_a{
 	display:inline-block;
-	padding:0 0px;
-	line-height:12px;
-	border:0px dashed #000000;
+	line-height:normal;
 	text-decoration:none;
-	background-color: #666666;
 }
 .acw_a{
 	border: 0px none #000000;
