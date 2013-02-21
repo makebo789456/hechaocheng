@@ -29,12 +29,13 @@ src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="10029153
        //根据返回数据，更换按钮显示状态方法
        var dom = document.getElementById(opts['btnId']),
        _logoutTemplate=[
-            //头像
-            '<span><img src="{figureurl_2}" class="{size_key}" title="{nickname}" alt="{nickname}" align="absmiddle" /></span>',
+           
             //昵称
             '<span>{nickname}</span>',
             //退出
             '<span><a href="javascript:QC.Login.signOut();">註銷</a></span>'	
+			 //头像
+            '<span><img src="{figureurl_2}" class="{size_key}" title="{nickname}" alt="{nickname}" align="absmiddle" /></span>',
                      ].join("");
        dom && (dom.innerHTML = QC.String.format(_logoutTemplate, {
            nickname : QC.String.escHTML(reqData.nickname),
