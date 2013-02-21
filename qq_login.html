@@ -30,7 +30,7 @@ src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="10029153
             //昵称
             '<span>{nickname}</span>',
             //退出
-            '<span><a href="javascript:QC.Login.signOut();">退出</a></span>'	
+            '<span><a href="javascript:QC.Login.signOut();">註銷</a></span>'	
                      ].join("");
        dom && (dom.innerHTML = QC.String.format(_logoutTemplate, {
            nickname : QC.String.escHTML(reqData.nickname),
@@ -45,16 +45,5 @@ alert('QQ登录 注销成功');
 
 <body>
 <span id="qqLoginBtn"></span>
-<table width="100%" border="1">
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-	   </tr><tr>
-	    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
 </body>
 </html>
