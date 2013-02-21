@@ -67,22 +67,18 @@ th{padding: 2px; font-weight:bold;background:#dedede;color:#626262;border:1px so
 	background-color: #666666;
 }
 .acw_a{
-	border: 1px solid #000000;
+	border: 0px none #000000;
 }
 .acw_a a:hover{
 	color:#000000;
 	background-color: #CCCCCC;
-	border: 1px solid #000000;
+	border: 0px none #000000;
 	text-decoration: none;
 	padding: 1px;
 }
 .acw_a{
 	margin: 1px;
-	padding-top: 2px;
-	padding-right: 3px;
-	padding-bottom: 2px;
-	padding-left: 3px;
-	background-color: #D2E9FF;
+	padding: 0px;
 }
 .acity_waiting_css {border: 1px solid #D7D7D7;width: 912px;}
 .copy_hocity {font-size: 12px;font-weight: bold;}
