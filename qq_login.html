@@ -20,7 +20,7 @@ src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="10029153
        //用户需要确认的scope授权项，可选，默认all
        scope:"all",
        //按钮尺寸，可用值[A_XL| A_L| A_M| A_S|  B_M| B_S| C_S]，可选，默认B_S
-       size: "A_XL"
+       size: "A_S"
    }, function(reqData, opts){//登录成功
        //根据返回数据，更换按钮显示状态方法
        var dom = document.getElementById(opts['btnId']),
@@ -45,5 +45,16 @@ alert('QQ登录 注销成功');
 
 <body>
 <span id="qqLoginBtn"></span>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+	   </tr><tr>
+	    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>
