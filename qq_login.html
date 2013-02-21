@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>{nickname}</title>
 <script type="text/javascript"
-src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100291539" data-redirecturi="http://detail.hechaocheng.cn/welcome.html" charset="utf-8"></script>
+src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100291539" data-redirecturi="http://detail.hechaocheng.cn/" charset="utf-8"></script>
 <script type="text/javascript">
     QC.Login({
        btnId:"qqLoginBtn"	//插入按钮的节点id
@@ -12,6 +12,11 @@ src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="10029153
 </script>
 
 
+
+</head>
+
+<body>
+<span id="qqLoginBtn"></span>
 <script type="text/javascript">
    //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中
    QC.Login({
@@ -37,13 +42,9 @@ src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="10029153
            figureurl : reqData.figureurl
               }));
    }, function(opts){//注销成功
-alert('{nickname} 注销成功');
+alert('注销成功');
                      }
 );
 </script>
-</head>
-
-<body>
-<span id="qqLoginBtn"></span>
 </body>
 </html>
