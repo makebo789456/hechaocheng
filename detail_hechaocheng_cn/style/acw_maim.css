@@ -63,9 +63,7 @@ th{padding: 2px; font-weight:bold;background:#dedede;color:#626262;border:1px so
 	line-height:normal;
 	text-decoration:none;
 }
-.acw_a{
-	border: 0px none #000000;
-}
+.acw_a{border: 0px none #000000;}
 .acw_a a:hover{
 	color:#000000;
 	background-color: #CCCCCC;
