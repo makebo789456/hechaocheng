@@ -5,7 +5,7 @@ document.writeln("<a class=\"bds_tsina\"></a>");
 document.writeln("<a class=\"bds_tqq\"></a>");
 document.writeln("<a class=\"bds_renren\"></a>");
 document.writeln("<a class=\"bds_t163\"></a>");
-document.writeln("<span class=\"bds_more\">更多</span>");
+document.writeln("<span class=\"bds_more\"></span>");
 document.writeln("<a class=\"shareCount\"></a>");
 document.writeln("</div>");
 document.writeln("<script type=\"text/javascript\" id=\"bdshare_js\" data=\"type=tools&amp;uid=2868551\" ></script>");
