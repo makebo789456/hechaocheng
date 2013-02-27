@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS 网页顶部固定工具栏拖动无闪烁实现代码</title>
+</head>
+
+<body>
+
+<textarea name="">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>顶部拖动无闪烁菜单栏</title> 
+<style type="text/css"> 
+* 
+{ 
+    margin: 0px; 
+    padding: 0px; 
+} 
+body { 
+    background-image: url(); 
+    background-attachment: fixed; 
+} 
+#topNavWrapper { 
+    width: 980px; 
+    text-align: left; 
+    height: 31px; 
+    margin: 0px auto; 
+    z-index:100; 
+    _position: relative ; 
+    _top:0px; 
+} 
+#topNav { 
+    width: 980px; 
+    float: left; 
+    display: block; 
+    z-index: 100; 
+    overflow: visible; 
+    position: fixed; 
+    top: 0px; /* position fixed for IE6 */ 
+    _position: absolute; 
+    _top: expression(documentElement.scrollTop + "px"); 
+    background-image: url(/upload/2010-3/20100303232637297.gif); 
+    background-repeat: no-repeat; 
+    background-position: right; 
+    height: 31px; 
+} 
+</style> 
+</head> 
+<body> 
+<div id="topNavWrapper"> 
+        <ul class="jd_menu" id="topNav"> 
+<li><a href="http://www.jb51.net" target="_blank">脚本之家</a></li> 
+        </ul> 
+</div> 
+<table><tr><td height="1080"></td></tr></table> 
+</body> 
+</html>
+
+</textarea>
+
+
+</body>
+</html>
